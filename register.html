@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+</head>
+<body>
+  <!-- Use GET, not POST -->
+
+  <form method="GET"> <!--GET attaches input from form into url-->
+    <a href="index.html">Return</a><br>
+    First Name: <input type="text" name="firstname"><br>
+    Last Name: <input type="text" name="lastname"><br>
+    Email: <input type="email" name="email" required><br>
+    Password: <input type="password" name="password" minLength="5"><br>
+    Birthday: <input type="date" name="birthday"><br>
+    Gender:<br>
+    <input type="radio" name="gender" value="Male">Male<br>
+    <input type="radio" name="gender" value="Female">Female<br>
+    <input type="radio" name="gender" value="Other">Other<br>
+    Pets: <br>
+    <input type="checkbox" name="pet" value="cat"> Cat<br>
+    <input type="checkbox" name="pet" value="dog"> Dog<br>
+    Cars: <br>
+    <select name="cars">
+      <option value="volvo">Volvo</option>
+      <option value="audi">Audi</option>
+    </select><br>
+    <input type="submit" value="Register!"> <!--value attribute changes the 'submit button's name' -->
+    <input type="reset">
+
+  </form>
+  
+  
+</body>
+</html>
+
+<!-- name="" allows you to attach form data to url because of method = 'GET'-->
+<!-- 
+(?
+firstname=Minh
+&lastname=Nguyen
+&email=mhgnuye%40gmail.com
+&password=3dijalkgjaiht4we
+&birthday=1981-03-01
+&gender=Male
+&pet=cat
+&cars=audi) 
+-->
